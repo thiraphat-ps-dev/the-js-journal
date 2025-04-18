@@ -1,4 +1,6 @@
+// 🔰 เงื่อนไขใน JavaScript
 
+// ฟังก์ชันคำนวณเกรด
 const score = 85;
 const gradeCalculator = (score) => {
   if (score >= 90) return "A";
@@ -9,10 +11,12 @@ const gradeCalculator = (score) => {
 };
 console.log(`Your grade is: ${gradeCalculator(score)}`);
 
+// ternary operator: สั้นกว่า if-else
 const isLoggedIn = true;
 const welcomeMessage = isLoggedIn ? "ยินดีต้อนรับ" : "กรุณาเข้าสู่ระบบ";
 console.log(welcomeMessage);
 
+// switch-case
 const checkRole = (role) => {
   switch (role) {
     case "admin": return "เข้าถึงทุกอย่าง";
@@ -22,6 +26,3 @@ const checkRole = (role) => {
   }
 };
 console.log(checkRole("admin"));
-console.log(checkRole("user"));
-console.log(checkRole("guest"));
-console.log(checkRole("unknown"));
